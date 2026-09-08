@@ -180,14 +180,21 @@ bot.hears('anatomy jars slides', async (ctx) => {
     ]);
 });
 
+// إضافة مهمة عشان البوت ما يعملش Crash لو حصل أي خطأ داخلي
+bot.catch((err, ctx) => {
+    console.error(`Error for ${ctx.updateType}:`, err);
+});
+
 module.exports = async (req, res) => {
     try {
         if (req.method === 'POST') {
             await bot.handleUpdate(req.body);
         }
-        res.status(200).send('Bot is running on Vercel!');
+        // لازم دايماً نرجع 200 لتليجرام عشان ما يعيدش إرسال نفس الطلب
+        res.status(200).send('OK');
     } catch (err) {
-        console.error(err);
-        res.status(500).send('Error');
+        console.error('Webhook Error:', err);
+        // حتى لو حصل خطأ، لازم نرجع 200 عشان نفضي الطابور المعلق
+        res.status(200).send('OK');
     }
 };
