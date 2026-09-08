@@ -1,6 +1,6 @@
 const { Telegraf, Markup } = require('telegraf');
 
-const bot = new Telegraf('8939431177:AAEapD2B00xbBcPJ7mepSnbPqE91DNyoWp8');
+const bot = new Telegraf('8657308504:AAH5GmoWfpJtFCZzYiNrEoH-Ja96A6IJ2Pg');
 const mainMenuKeyboard = Markup.keyboard([
     ['📝 Midterms', '🔥 Finals'],
     ['⚡️ Revisions', '✍️ Quizzes'],
