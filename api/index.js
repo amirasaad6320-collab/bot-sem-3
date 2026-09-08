@@ -1,8 +1,6 @@
 const { Telegraf, Markup } = require('telegraf');
 
-// التوكن هيتسحب أوتوماتيك من إعدادات Vercel
-const bot = new Telegraf(process.env.BOT_TOKEN);
-
+const bot = new Telegraf('8939431177:AAEapD2B00xbBcPJ7mepSnbPqE91DNyoWp8');
 const mainMenuKeyboard = Markup.keyboard([
     ['📝 Midterms', '🔥 Finals'],
     ['⚡️ Revisions', '✍️ Quizzes'],
