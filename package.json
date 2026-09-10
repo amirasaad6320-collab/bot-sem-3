@@ -1,4 +1,8 @@
 {
+  "name": "med-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
   "dependencies": {
     "telegraf": "^4.15.0"
   }
