@@ -1,7 +1,7 @@
 const { Telegraf, Markup } = require('telegraf');
 
 // 1️⃣ التوكن الخاص بك
-const bot = new Telegraf('8974042053:AAHwLxS9A1BQwmS_FKFWLYI6kWVD_yelJ1k');
+const bot = new Telegraf('8939431177:AAEapD2B00xbBcPJ7mepSnbPqE91DNyoWp8');
 
 // 2️⃣ الشاشة الرئيسية
 const mainMenuKeyboard = Markup.keyboard([
